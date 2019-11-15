@@ -6,3 +6,15 @@ for i in range(n):
 print(p)
 
 the point is very important for the floating point version
+
+def move(p, U):
+    #
+    q=[]
+    for i in range(len(p)):
+        q.append(p[i-U])
+    return q
+
+print move(p, 1)
+
+the answer should be this.
+q.append(p[(i-U) % len(p)])
